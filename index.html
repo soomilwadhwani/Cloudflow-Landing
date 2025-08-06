@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-all duration-300 scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CloudFlow – Smart Cloud Productivity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-all duration-300">
+
+  <nav class="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow z-50 py-4 px-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600 dark:text-blue-400">CloudFlow</h1>
+    <div class="space-x-4 text-sm">
+      <a href="#features" class="hover:text-blue-600">Features</a>
+      <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+      <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+      <button id="toggleTheme" class="ml-4 px-3 py-1 bg-blue-600 text-white rounded">Toggle Theme</button>
+    </div>
+  </nav>
+
+  <main class="pt-24 space-y-24">
+
+   
+    <section class="text-center px-6">
+      <h2 class="text-4xl font-bold mb-4">Work Smarter with CloudFlow</h2>
+      <p class="text-lg max-w-xl mx-auto mb-6 text-gray-600 dark:text-gray-300">
+        CloudFlow unites your notes, tasks, and team in one secure, AI-powered workspace.
+      </p>
+      <a href="#cta" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold">Start Free Trial</a>
+    </section>
+
+   
+    <section id="features" class="px-6 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Powerful Features</h3>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm">
+          <div class="mb-2 text-blue-600 dark:text-blue-400">
+            📁
+          </div>
+          <h4 class="font-semibold mb-2">Smart File Management</h4>
+          <p class="text-sm">Upload, organize, and tag files easily. AI suggests organization methods.</p>
+        </div>
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm">
+          <div class="mb-2 text-blue-600 dark:text-blue-400">
+            ⚡
+          </div>
+          <h4 class="font-semibold mb-2">Workflow Automation</h4>
+          <p class="text-sm">Use prebuilt flows to automate team communication and task assignments.</p>
+        </div>
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-sm">
+          <div class="mb-2 text-blue-600 dark:text-blue-400">
+            🔒
+          </div>
+          <h4 class="font-semibold mb-2">Military-grade Security</h4>
+          <p class="text-sm">All data is encrypted using 256-bit SSL and stored securely.</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="pricing" class="px-6 max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-10">Simple, Scalable Pricing</h3>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="border rounded-lg p-6 shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold mb-2">Free</h4>
+          <p class="text-2xl font-bold mb-4">$0<span class="text-sm font-normal">/mo</span></p>
+          <ul class="text-sm space-y-2">
+            <li>✅ 1 Workspace</li>
+            <li>✅ 5 GB Storage</li>
+            <li>✅ Email Support</li>
+          </ul>
+        </div>
+        <div class="border rounded-lg p-6 shadow hover:shadow-md transition bg-blue-50 dark:bg-blue-800">
+          <h4 class="text-xl font-semibold mb-2">Pro</h4>
+          <p class="text-2xl font-bold mb-4">$24<span class="text-sm font-normal">/mo</span></p>
+          <ul class="text-sm space-y-2">
+            <li>✅ Unlimited Workspaces</li>
+            <li>✅ 1 TB Storage</li>
+            <li>✅ 24/7 Priority Support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="testimonials" class="bg-blue-50 dark:bg-blue-900 px-6 py-16">
+      <h3 class="text-3xl font-bold text-center mb-10">Loved by Teams Worldwide</h3>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+          <p class="mb-2">“CloudFlow cut our planning time in half. Everything’s centralized now.”</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">– Aisha, UX Team Lead</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+          <p class="mb-2">“From files to meetings, we manage it all in CloudFlow. Love the automations!”</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">– Rahul, CTO</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="cta" class="text-center px-6 py-20 bg-gradient-to-br from-blue-600 to-blue-500 text-white">
+      <h3 class="text-3xl font-bold mb-4">Join 10,000+ productive teams</h3>
+      <p class="mb-6">Sign up now and get 14 days of Pro absolutely free. No card required.</p>
+      <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+        <input type="email" placeholder="you@example.com" required class="flex-1 px-4 py-3 rounded text-black" />
+        <button type="submit" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded hover:bg-blue-100">Get Started</button>
+      </form>
+    </section>
+
+   
+    <section class="px-6 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6">Frequently Asked Questions</h3>
+      <details class="mb-4 bg-gray-100 dark:bg-gray-800 p-4 rounded">
+        <summary class="font-semibold cursor-pointer">Is there a free trial?</summary>
+        <p class="mt-2 text-sm">Yes! You get 14 days of Pro access for free with no credit card required.</p>
+      </details>
+      <details class="mb-4 bg-gray-100 dark:bg-gray-800 p-4 rounded">
+        <summary class="font-semibold cursor-pointer">Can I cancel anytime?</summary>
+        <p class="mt-2 text-sm">Absolutely. You can downgrade or cancel anytime from your settings.</p>
+      </details>
+    </section>
+
+  </main>
+
+  
+  <footer class="mt-20 text-center text-sm text-gray-500 dark:text-gray-400 py-6">
+    &copy; 2025 CloudFlow Inc. • <a href="#" class="hover:underline">Privacy Policy</a>
+  </footer>
+
+  
+  <script>
+    const toggle = document.getElementById('toggleTheme');
+    const root = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      root.classList.add('dark');
+    }
+
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
